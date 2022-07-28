@@ -1,2 +1,2 @@
 # PortafolioFrontEnd
-Proyecto final integrador #YoProgramo - (Argentina Programa)
+Proyecto final integrador | #YoProgramo | Argentina Programa
