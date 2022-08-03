@@ -1,4 +1,13 @@
 * {
     font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 0;
 }
 
+.header-all {
+    top: 0;
+    left: 0%;
+    display: flex;
+    justify-content: space-between;
+    background-color: blanchedalmond;
+}
