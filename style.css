@@ -2,12 +2,37 @@
     font-family: 'Roboto Mono', monospace;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    
+}
+header {
+    position: fixed;
+    width: 100%;
+    height: 80px;
 }
 
-.header-all {
+.header__container {
     top: 0;
     left: 0%;
     display: flex;
     justify-content: space-between;
     background-color: blanchedalmond;
+}
+
+li {
+    list-style: none;
+    display: inline;
+}
+.iconos__header {
+    display: flex;
+    align-items: center;
+}
+
+.logo__header{
+    width: 100%;
+}
+
+.logo__container {
+    width: 80px;
+    margin: 15px;
 }
