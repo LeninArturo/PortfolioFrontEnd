@@ -1,65 +1,190 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="initialize.css".css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/63ce5af98d.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Mi Portfolio</title>
 
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="initialize.css" .c">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Mi Portfolio</title>
 </head>
+
 <body>
-    <header>
-        <img class="logo-header" src="/Recursos/yoProgramoLogo.png" alt="">    
-        <nav class="iconos-header">
-            <ul>
-                <li>
-                    <button type="button" class="btn btn-primary btn-header">Contactar</button>
-                </li> 
-                <li>
-                    <i class="fa-solid fa-envelope"></i>
-                </li>
-                <li>
-                    <i class="fa-brands fa-github"></i>
-                </li>
-                <li>
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </li>
-                <li>
-                    <i class="fa-solid fa-right-to-bracket"></i>
-                </li>
-             </ul>
-        </nav>
+    <!-- <header class="bg-dark fixed-top">
+      <img
+        class="navbar-brand"
+        src="./Recursos/ArgentinaProgramaLogo.png"
+        alt="Logo Argentina Programa"
+      />
+      <nav class="iconos-header">
+        <ul>
+          <li>
+            <button type="button" class="btn btn-primary btn-header">
+              Contactar
+            </button>
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope"></i>
+          </li>
+          <li>
+            <i class="fa-brands fa-github"></i>
+          </li>
+          <li>
+            <i class="fa-brands fa-linkedin-in"></i>
+          </li>
+          <li>
+            <i class="fa-solid fa-right-to-bracket"></i>
+          </li>
+        </ul>
+      </nav>
+    </header> -->
+<header class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" >
+   
+        <div class="container">
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                <i class="display-6 bi bi-three-dots-vertical text-light navbar-simple-icon"></i>
+            </button>
+
+            <div class="offcanvas offcanvas-start text-bg-dark" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Bienvenidos</h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+
+                <nav class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                          <li nav-item>
+                            <button type="button" class="btn btn-primary btn-header">
+                              Contactar
+                            </button>
+                          </li>
+                          <li nav-item>
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <i class="bi bi-envelope-fill nav-item"></i> Gmail
+                            </a>
+                          </li>
+                    
+                          </li>
+                        </ul>
+                </nav>
+            </div>
+
+
+            <a class="navbar-brand" href="#">
+                <img src="./Recursos/ArgentinaProgramaLogo.png" alt="Logo Argentina Programa" width="110">
+            </a>
+
+            <button class="btn">
+                <i class="display-6 bi bi-box-arrow-in-right text-light navbar-simple-icon"></i>
+            </button>
+
+        </div>
     
-    </header>
+
+</header>
+    -->
+    <!-- 
     <div class="banner">
-        <img class="img-banner" src="./Recursos/img-link.jpg" alt="">
+      <img class="img-banner" src="./Recursos/img-link.jpg" alt="" />
     </div>
 
     <div class="container-fluid">
-        <h1>Mi portfolio</h1>
-        <h2>Sub titulo</h2>
+      <h1>Mi portfolio</h1>
+      <h2>Sub titulo</h2>
     </div>
     <section class="container-fluid">
-        <p class="col-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, delectus architecto labore pariatur ex sed natus illum libero laudantium ducimus quidem aperiam quae. Earum, tenetur blanditiis quasi recusandae facilis animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet illo dicta quae optio, temporibus neque excepturi provident repellat, commodi nesciunt ad sit. Magni nulla harum unde reiciendis aliquam adipisci fuga. loren  Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, accusamus necessitatibus! Aut laborum saepe, ex perferendis repellat distinctio molestias expedita eius dolor. Quas excepturi animi dolorum culpa ea quaerat modi?  </p>
-        <br>
-        <p class="col-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, delectus architecto labore pariatur ex sed natus illum libero laudantium ducimus quidem aperiam quae. Earum, tenetur blanditiis quasi recusandae facilis animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet illo dicta quae optio, temporibus neque excepturi provident repellat, commodi nesciunt ad sit. Magni nulla harum unde reiciendis aliquam adipisci fuga. loren  Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, accusamus necessitatibus! Aut laborum saepe, ex perferendis repellat distinctio molestias expedita eius dolor. Quas excepturi animi dolorum culpa ea quaerat modi?  </p>
-        <br>
-        <p class="col-12" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, delectus architecto labore pariatur ex sed natus illum libero laudantium ducimus quidem aperiam quae. Earum, tenetur blanditiis quasi recusandae facilis animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet illo dicta quae optio, temporibus neque excepturi provident repellat, commodi nesciunt ad sit. Magni nulla harum unde reiciendis aliquam adipisci fuga. loren  Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, accusamus necessitatibus! Aut laborum saepe, ex perferendis repellat distinctio molestias expedita eius dolor. Quas excepturi animi dolorum culpa ea quaerat modi?  </p>
-        <br>
-        <p class="col-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, delectus architecto labore pariatur ex sed natus illum libero laudantium ducimus quidem aperiam quae. Earum, tenetur blanditiis quasi recusandae facilis animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet illo dicta quae optio, temporibus neque excepturi provident repellat, commodi nesciunt ad sit. Magni nulla harum unde reiciendis aliquam adipisci fuga. loren  Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, accusamus necessitatibus! Aut laborum saepe, ex perferendis repellat distinctio molestias expedita eius dolor. Quas excepturi animi dolorum culpa ea quaerat modi?  </p>
-        <br>
-        <p class="col-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, delectus architecto labore pariatur ex sed natus illum libero laudantium ducimus quidem aperiam quae. Earum, tenetur blanditiis quasi recusandae facilis animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet illo dicta quae optio, temporibus neque excepturi provident repellat, commodi nesciunt ad sit. Magni nulla harum unde reiciendis aliquam adipisci fuga. loren  Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, accusamus necessitatibus! Aut laborum saepe, ex perferendis repellat distinctio molestias expedita eius dolor. Quas excepturi animi dolorum culpa ea quaerat modi?  </p>
-        <br>
-        <p class="col-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, delectus architecto labore pariatur ex sed natus illum libero laudantium ducimus quidem aperiam quae. Earum, tenetur blanditiis quasi recusandae facilis animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet illo dicta quae optio, temporibus neque excepturi provident repellat, commodi nesciunt ad sit. Magni nulla harum unde reiciendis aliquam adipisci fuga. loren  Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, accusamus necessitatibus! Aut laborum saepe, ex perferendis repellat distinctio molestias expedita eius dolor. Quas excepturi animi dolorum culpa ea quaerat modi?  </p>
-        <br>
-    </section>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+      <p class="col-12">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, delectus
+        architecto labore pariatur ex sed natus illum libero laudantium ducimus
+        quidem aperiam quae. Earum, tenetur blanditiis quasi recusandae facilis
+        animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+        illo dicta quae optio, temporibus neque excepturi provident repellat,
+        commodi nesciunt ad sit. Magni nulla harum unde reiciendis aliquam
+        adipisci fuga. loren Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Reprehenderit, accusamus necessitatibus! Aut laborum saepe, ex
+        perferendis repellat distinctio molestias expedita eius dolor. Quas
+        excepturi animi dolorum culpa ea quaerat modi?
+      </p>
+      <br />
+      <p class="col-12">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, delectus
+        architecto labore pariatur ex sed natus illum libero laudantium ducimus
+        quidem aperiam quae. Earum, tenetur blanditiis quasi recusandae facilis
+        animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+        illo dicta quae optio, temporibus neque excepturi provident repellat,
+        commodi nesciunt ad sit. Magni nulla harum unde reiciendis aliquam
+        adipisci fuga. loren Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Reprehenderit, accusamus necessitatibus! Aut laborum saepe, ex
+        perferendis repellat distinctio molestias expedita eius dolor. Quas
+        excepturi animi dolorum culpa ea quaerat modi?
+      </p>
+      <br />
+      <p class="col-12">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, delectus
+        architecto labore pariatur ex sed natus illum libero laudantium ducimus
+        quidem aperiam quae. Earum, tenetur blanditiis quasi recusandae facilis
+        animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+        illo dicta quae optio, temporibus neque excepturi provident repellat,
+        commodi nesciunt ad sit. Magni nulla harum unde reiciendis aliquam
+        adipisci fuga. loren Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Reprehenderit, accusamus necessitatibus! Aut laborum saepe, ex
+        perferendis repellat distinctio molestias expedita eius dolor. Quas
+        excepturi animi dolorum culpa ea quaerat modi?
+      </p>
+      <br />
+      <p class="col-12">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, delectus
+        architecto labore pariatur ex sed natus illum libero laudantium ducimus
+        quidem aperiam quae. Earum, tenetur blanditiis quasi recusandae facilis
+        animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+        illo dicta quae optio, temporibus neque excepturi provident repellat,
+        commodi nesciunt ad sit. Magni nulla harum unde reiciendis aliquam
+        adipisci fuga. loren Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Reprehenderit, accusamus necessitatibus! Aut laborum saepe, ex
+        perferendis repellat distinctio molestias expedita eius dolor. Quas
+        excepturi animi dolorum culpa ea quaerat modi?
+      </p>
+      <br />
+      <p class="col-12">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, delectus
+        architecto labore pariatur ex sed natus illum libero laudantium ducimus
+        quidem aperiam quae. Earum, tenetur blanditiis quasi recusandae facilis
+        animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+        illo dicta quae optio, temporibus neque excepturi provident repellat,
+        commodi nesciunt ad sit. Magni nulla harum unde reiciendis aliquam
+        adipisci fuga. loren Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Reprehenderit, accusamus necessitatibus! Aut laborum saepe, ex
+        perferendis repellat distinctio molestias expedita eius dolor. Quas
+        excepturi animi dolorum culpa ea quaerat modi?
+      </p>
+      <br />
+      <p class="col-12">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, delectus
+        architecto labore pariatur ex sed natus illum libero laudantium ducimus
+        quidem aperiam quae. Earum, tenetur blanditiis quasi recusandae facilis
+        animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+        illo dicta quae optio, temporibus neque excepturi provident repellat,
+        commodi nesciunt ad sit. Magni nulla harum unde reiciendis aliquam
+        adipisci fuga. loren Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Reprehenderit, accusamus necessitatibus! Aut laborum saepe, ex
+        perferendis repellat distinctio molestias expedita eius dolor. Quas
+        excepturi animi dolorum culpa ea quaerat modi?
+      </p>
+      <br />
+    </section> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
