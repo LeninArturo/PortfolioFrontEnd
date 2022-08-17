@@ -20,49 +20,87 @@
 
 <body>
   
-<header class="navbar navbar-expand-md navbar-dark bg-dark fixed-top shadow-sm" >
+<header class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm" >
    
-        <div class="container">
+  <div class="container">
+  
+    <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+      <i class="display-6 bi bi-three-dots-vertical text-light navbar-simple-icon"></i>
+    </button>
+  
+    <div class="offcanvas offcanvas-start text-bg-dark" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+      aria-labelledby="offcanvasWithBothOptionsLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title text-center" id="offcanvasWithBothOptionsLabel">¡Bienvenido a mi sitio!</h5>
+        <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas"
+          aria-label="Close"></button>
+      </div>
+  
+      <nav class="offcanvas-body justify-content-between">
 
-            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
-                <i class="display-6 bi bi-three-dots-vertical text-light navbar-simple-icon"></i>
-            </button>
+    
+        <ul class="navbar-nav gap-3 gap-lg-1 text-center">
+  
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Acerca de</a>
+          </li>
+  
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Experiencia</a>
+          </li>
 
-            <div class="offcanvas offcanvas-start text-bg-dark" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
-                <div class="offcanvas-header">
-                  <h5 class="offcanvas-title text-center" id="offcanvasWithBothOptionsLabel">¡Hola! soy Lenin</h5>
-                  <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Educación</a>
+          </li>
 
-                <nav class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-md-end flex-md-grow-1 gap-lg-2">
-                          
-                          <li class="nav-item text-center">
-                            <a class="nav-link active fs-2" aria-current="page" href="#">
-                                <i class="bi bi-envelope-fill nav-item fs-2"></i> Gmail
-                            </a>
-                          </li>
-                    
-                          <li class="nav-item text-center">
-                            <button type="button" class="btn btn-primary btn-lg nav-item fs-2">
-                              Contactar
-                            </button>
-                          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Skills</a>
+          </li>
 
-                        </ul>
-                </nav>
-            </div>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Proyectos</a>
+          </li>
+        </ul>
 
 
-            <a class="navbar-brand order-md-first" href="#">
-                <img src="./Recursos/ArgentinaProgramaLogo.png" alt="Logo Argentina Programa" width="110">
+        <ul class="navbar-nav flex-row gap-5 mt-4 mt-md-0 justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link" href="">
+              <i class="bi bi-github"></i>
             </a>
+            
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">
+              <i class="bi bi-envelope-fill"></i>
+            </a>
+            
+          </li>
+        </ul>
 
-            <button class="btn">
-                <i class="display-6 bi bi-box-arrow-in-right text-light navbar-simple-icon"></i>
-            </button>
 
-        </div>
+
+
+      </nav>
+    </div>
+  
+  
+    <a class="navbar-brand order-lg-first" href="#">
+      <img src="./Recursos/ArgentinaProgramaLogo.png" alt="Logo Argentina Programa" width="110">
+    </a>
+  
+    <button class="btn-light">
+      <i class="display-6 bi bi-box-arrow-in-right"></i>
+    </button>
+  
+  </div>
 </header>
 
     <!-- 
