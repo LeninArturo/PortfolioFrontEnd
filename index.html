@@ -19,181 +19,109 @@
 </head>
 
 <body>
-  
-<header class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm" >
-   
-  <div class="container">
-  
-    <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
-      data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
-      <i class="display-6 bi bi-three-dots-vertical text-light navbar-simple-icon"></i>
-    </button>
-  
-    <div class="offcanvas offcanvas-start text-bg-dark" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
-      aria-labelledby="offcanvasWithBothOptionsLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title text-center" id="offcanvasWithBothOptionsLabel">¡Bienvenido a mi sitio!</h5>
-        <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas"
-          aria-label="Close"></button>
-      </div>
-  
-      <nav class="offcanvas-body justify-content-between py-1">
+  <header class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm" >
+    <div class="container">
 
+<!-- ============================ Nav-toggler & Nav-Items ================================= -->
+      <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+        <i class="display-6 bi bi-three-dots-vertical text-light navbar-simple-icon"></i>
+      </button>
     
-        <ul class="navbar-nav gap-6 gap-lg-1 text-center">
+      <div class="offcanvas offcanvas-start text-bg-dark" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title text-center" id="offcanvasWithBothOptionsLabel">¡Bienvenido a mi sitio!</h5>
+          <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+    
+        <nav class="offcanvas-body justify-content-between py-1">      
+          <ul class="navbar-nav gap-6 gap-lg-1 text-center">    
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Acerca de</a>
+            </li>
+    
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Experiencia</a>
+            </li>
   
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Acerca de</a>
-          </li>
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="#">Educación</a>
+            </li>
   
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Experiencia</a>
-          </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Skills</a>
+            </li>
+  
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Proyectos</a>
+            </li>
+          </ul>
+  
+          <ul class="navbar-nav flex-row gap-5 gap-lg-3 mt-4 mt-md-0 justify-content-center">            
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">
+                <i class="bi bi-github"></i>
+              </a>
+            </li>
 
-          <li class="nav-item active">
-            <a class="nav-link" aria-current="page" href="#">Educación</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Skills</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Proyectos</a>
-          </li>
-        </ul>
-
-
-        <ul class="navbar-nav flex-row gap-5 gap-lg-3 mt-4 mt-md-0 justify-content-center">
-          <li class="nav-item">
-            <a class="nav-link text-light" href="#">
-              <i class="bi bi-github"></i>
-            </a>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">
+                <i class="bi bi-linkedin"></i>
+              </a>              
+            </li>
             
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light" href="#">
-              <i class="bi bi-linkedin"></i>
-            </a>
-            
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link text-light" href="#">
-              <i class="bi bi-envelope-fill"></i>
-            </a>
-            
-          </li>
-        </ul>
+            <li class="nav-item ">
+              <a class="nav-link text-light" href="#">
+                <i class="bi bi-envelope-fill"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
 
-
-
-
-      </nav>
-    </div>
-  
-  
-    <a class="navbar-brand order-lg-first" href="#">
-      <img src="./Recursos/ArgentinaProgramaLogo.png" alt="Logo Argentina Programa" width="110">
-    </a>
-  
-    <button class="nav-item border-0 bg-dark">
-      <a class="nav-link text-light" href="#">
-        <i class="bi bi-box-arrow-in-right" style="font-size: 1.5rem;""></i>
+      </div>
+    
+<!-- ================================== Site logo ========================================== -->
+      <a class="navbar-brand order-lg-first" href="#">
+        <img src="./Recursos/ArgentinaProgramaLogo.png" alt="Logo Argentina Programa" width="110">
       </a>
-    </button>
-  
-  </div>
-</header>
 
-    <!-- 
-    <div class="banner">
-      <img class="img-banner" src="./Recursos/img-link.jpg" alt="" />
-    </div>
+<!-- ============================= Trigger Login Modal ===================================== -->
+      <button class="nav-item border-0 bg-dark" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@Usuario">
+        <a class="nav-link text-light" href="#">
+          <i class="bi bi-box-arrow-in-right" style="font-size: 1.5rem;""></i>
+        </a>
+      </button>
 
-    <div class="container-fluid">
-      <h1>Mi portfolio</h1>
-      <h2>Sub titulo</h2>
     </div>
-    <section class="container-fluid">
-      <p class="col-12">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, delectus
-        architecto labore pariatur ex sed natus illum libero laudantium ducimus
-        quidem aperiam quae. Earum, tenetur blanditiis quasi recusandae facilis
-        animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-        illo dicta quae optio, temporibus neque excepturi provident repellat,
-        commodi nesciunt ad sit. Magni nulla harum unde reiciendis aliquam
-        adipisci fuga. loren Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Reprehenderit, accusamus necessitatibus! Aut laborum saepe, ex
-        perferendis repellat distinctio molestias expedita eius dolor. Quas
-        excepturi animi dolorum culpa ea quaerat modi?
-      </p>
-      <br />
-      <p class="col-12">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, delectus
-        architecto labore pariatur ex sed natus illum libero laudantium ducimus
-        quidem aperiam quae. Earum, tenetur blanditiis quasi recusandae facilis
-        animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-        illo dicta quae optio, temporibus neque excepturi provident repellat,
-        commodi nesciunt ad sit. Magni nulla harum unde reiciendis aliquam
-        adipisci fuga. loren Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Reprehenderit, accusamus necessitatibus! Aut laborum saepe, ex
-        perferendis repellat distinctio molestias expedita eius dolor. Quas
-        excepturi animi dolorum culpa ea quaerat modi?
-      </p>
-      <br />
-      <p class="col-12">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, delectus
-        architecto labore pariatur ex sed natus illum libero laudantium ducimus
-        quidem aperiam quae. Earum, tenetur blanditiis quasi recusandae facilis
-        animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-        illo dicta quae optio, temporibus neque excepturi provident repellat,
-        commodi nesciunt ad sit. Magni nulla harum unde reiciendis aliquam
-        adipisci fuga. loren Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Reprehenderit, accusamus necessitatibus! Aut laborum saepe, ex
-        perferendis repellat distinctio molestias expedita eius dolor. Quas
-        excepturi animi dolorum culpa ea quaerat modi?
-      </p>
-      <br />
-      <p class="col-12">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, delectus
-        architecto labore pariatur ex sed natus illum libero laudantium ducimus
-        quidem aperiam quae. Earum, tenetur blanditiis quasi recusandae facilis
-        animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-        illo dicta quae optio, temporibus neque excepturi provident repellat,
-        commodi nesciunt ad sit. Magni nulla harum unde reiciendis aliquam
-        adipisci fuga. loren Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Reprehenderit, accusamus necessitatibus! Aut laborum saepe, ex
-        perferendis repellat distinctio molestias expedita eius dolor. Quas
-        excepturi animi dolorum culpa ea quaerat modi?
-      </p>
-      <br />
-      <p class="col-12">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, delectus
-        architecto labore pariatur ex sed natus illum libero laudantium ducimus
-        quidem aperiam quae. Earum, tenetur blanditiis quasi recusandae facilis
-        animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-        illo dicta quae optio, temporibus neque excepturi provident repellat,
-        commodi nesciunt ad sit. Magni nulla harum unde reiciendis aliquam
-        adipisci fuga. loren Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Reprehenderit, accusamus necessitatibus! Aut laborum saepe, ex
-        perferendis repellat distinctio molestias expedita eius dolor. Quas
-        excepturi animi dolorum culpa ea quaerat modi?
-      </p>
-      <br />
-      <p class="col-12">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, delectus
-        architecto labore pariatur ex sed natus illum libero laudantium ducimus
-        quidem aperiam quae. Earum, tenetur blanditiis quasi recusandae facilis
-        animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-        illo dicta quae optio, temporibus neque excepturi provident repellat,
-        commodi nesciunt ad sit. Magni nulla harum unde reiciendis aliquam
-        adipisci fuga. loren Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Reprehenderit, accusamus necessitatibus! Aut laborum saepe, ex
-        perferendis repellat distinctio molestias expedita eius dolor. Quas
-        excepturi animi dolorum culpa ea quaerat modi?
-      </p>
-      <br />
-    </section> -->
+  </header>    
+
+<!-- ========================= Login Modal ===================================== -->
+    <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Recipient:</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="mb-3">
+                <label for="message-text" class="col-form-label">Message:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Send message</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
