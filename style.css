@@ -1,75 +1,20 @@
-/* body {
-    font-family: 'Roboto Mono', monospace;
-    background-color: #fafafa;
-}
+ .profile-pic {
+    margin-top: -5em;
+    max-height: 9em;   
+ }
 
-header {
-    position: fixed;
-    top: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 70px;
-    background-color: #1f191a;
-    padding: 20px;
-    
-}
 
-.logo-header{
-    max-width: 150px;
-    height: auto;
-    cursor: pointer;
-}
+ @media (min-width: 768px) {
+    .profile-pic {
+        margin-top: -3em;
+        max-height: 12em;   
+     }
+  }
 
-.btn-header {
-    background-color: #ffb300;
-    border-color: #ffb300;
-    color: #1f191a;
-    font-weight:bold;
-    font-size: 15px;
-    margin-right: 20px;
-}
-
-.btn-header:hover, .btn-header:active, .btn-header:focus {
-    align-content: center;
-    background-color:#ffb300;
-    border: none;
-    border-color: #ffb300;
-    color: #1f191a;
-    font-weight:bold;
-    box-shadow: none;
-}
-
-.iconos-header ul, .iconos-header ul li {
-    list-style: none;
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0 auto;
-    
-}
+  @media (min-width: 992px) {
+    .profile-pic {
+        margin-top: -5em;
+        max-height: 12em;   
+     }
+  }
   
-.iconos-header ul li i {
-    color: white;
-    font-size: 20px;
-    cursor: pointer;
-    padding-left: 10px;
-    vertical-align: middle;
-}
-
-
-section {
-    margin: 60px;
-    background-color: #ffb300;
-    max-width: 999px;
-}
-
-.banner{
-    margin-top: 70px;
-
-}
-.img-banner {
-    width: 100%;
-    height: auto;
-} */
